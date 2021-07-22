@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,20 @@
 		4E6864DF26A96638003DD5A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6864DD26A96638003DD5A8 /* Main.storyboard */; };
 		4E6864E126A96639003DD5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6864E026A96639003DD5A8 /* Assets.xcassets */; };
 		4E6864E426A96639003DD5A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6864E226A96639003DD5A8 /* LaunchScreen.storyboard */; };
+		4E6864F726A96F92003DD5A8 /* ScreenOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6864F526A96F92003DD5A8 /* ScreenOneViewController.swift */; };
+		4E6864F826A96F92003DD5A8 /* ScreenOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6864F626A96F92003DD5A8 /* ScreenOneViewController.xib */; };
+		4E6864FA26A96FAE003DD5A8 /* ScreenOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6864F926A96FAE003DD5A8 /* ScreenOneViewModel.swift */; };
+		4E6864FC26A98979003DD5A8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6864FB26A98979003DD5A8 /* Weather.swift */; };
+		4E6864FE26A98BBA003DD5A8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6864FD26A98BBA003DD5A8 /* Repository.swift */; };
+		4E68650026A98C72003DD5A8 /* RepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6864FF26A98C72003DD5A8 /* RepositoryImplementation.swift */; };
+		4E68650626A99CC3003DD5A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68650526A99CC3003DD5A8 /* Router.swift */; };
+		4E68650826A99CDB003DD5A8 /* AlamofireDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68650726A99CDB003DD5A8 /* AlamofireDataSource.swift */; };
+		4E68650A26A9A894003DD5A8 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68650926A9A894003DD5A8 /* RemoteDataSource.swift */; };
+		4E68650F26A9B3D8003DD5A8 /* ScreenTwoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68650E26A9B3D8003DD5A8 /* ScreenTwoViewModel.swift */; };
+		4E68651226A9B3ED003DD5A8 /* ScreenTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68651026A9B3ED003DD5A8 /* ScreenTwoViewController.swift */; };
+		4E68651326A9B3ED003DD5A8 /* ScreenTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E68651126A9B3ED003DD5A8 /* ScreenTwoViewController.xib */; };
+		4E68651726A9B533003DD5A8 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68651526A9B533003DD5A8 /* CellViewController.swift */; };
+		4E68651826A9B533003DD5A8 /* CellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E68651626A9B533003DD5A8 /* CellViewController.xib */; };
 		54F454F9F71A2262884CE20D /* Pods_Airvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200150C86B8740086C53FA3F /* Pods_Airvironment.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +40,20 @@
 		4E6864E026A96639003DD5A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E6864E326A96639003DD5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E6864E526A96639003DD5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6864F526A96F92003DD5A8 /* ScreenOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOneViewController.swift; sourceTree = "<group>"; };
+		4E6864F626A96F92003DD5A8 /* ScreenOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenOneViewController.xib; sourceTree = "<group>"; };
+		4E6864F926A96FAE003DD5A8 /* ScreenOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOneViewModel.swift; sourceTree = "<group>"; };
+		4E6864FB26A98979003DD5A8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4E6864FD26A98BBA003DD5A8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4E6864FF26A98C72003DD5A8 /* RepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImplementation.swift; sourceTree = "<group>"; };
+		4E68650526A99CC3003DD5A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4E68650726A99CDB003DD5A8 /* AlamofireDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDataSource.swift; sourceTree = "<group>"; };
+		4E68650926A9A894003DD5A8 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		4E68650E26A9B3D8003DD5A8 /* ScreenTwoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewModel.swift; sourceTree = "<group>"; };
+		4E68651026A9B3ED003DD5A8 /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
+		4E68651126A9B3ED003DD5A8 /* ScreenTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenTwoViewController.xib; sourceTree = "<group>"; };
+		4E68651526A9B533003DD5A8 /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		4E68651626A9B533003DD5A8 /* CellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellViewController.xib; sourceTree = "<group>"; };
 		53349AACC017A7BE0BAF0E40 /* Pods-Airvironment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airvironment.debug.xcconfig"; path = "Target Support Files/Pods-Airvironment/Pods-Airvironment.debug.xcconfig"; sourceTree = "<group>"; };
 		9E06D5912D6313B560303BC9 /* Pods-Airvironment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airvironment.release.xcconfig"; path = "Target Support Files/Pods-Airvironment/Pods-Airvironment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +76,6 @@
 				53349AACC017A7BE0BAF0E40 /* Pods-Airvironment.debug.xcconfig */,
 				9E06D5912D6313B560303BC9 /* Pods-Airvironment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +100,9 @@
 		4E6864D626A96638003DD5A8 /* Airvironment */ = {
 			isa = PBXGroup;
 			children = (
+				4E6864F026A96D3B003DD5A8 /* Features */,
+				4E6864EE26A96CCB003DD5A8 /* Repository */,
+				4E6864EB26A96C95003DD5A8 /* RemoveDataSource */,
 				4E6864D726A96638003DD5A8 /* AppDelegate.swift */,
 				4E6864D926A96638003DD5A8 /* SceneDelegate.swift */,
 				4E6864DB26A96638003DD5A8 /* ViewController.swift */,
@@ -82,6 +112,121 @@
 				4E6864E526A96639003DD5A8 /* Info.plist */,
 			);
 			path = Airvironment;
+			sourceTree = "<group>";
+		};
+		4E6864EB26A96C95003DD5A8 /* RemoveDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864ED26A96CBD003DD5A8 /* Models */,
+				4E6864EC26A96CA4003DD5A8 /* AlamofireDataSource */,
+				4E68650926A9A894003DD5A8 /* RemoteDataSource.swift */,
+			);
+			path = RemoveDataSource;
+			sourceTree = "<group>";
+		};
+		4E6864EC26A96CA4003DD5A8 /* AlamofireDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4E68650526A99CC3003DD5A8 /* Router.swift */,
+				4E68650726A99CDB003DD5A8 /* AlamofireDataSource.swift */,
+			);
+			path = AlamofireDataSource;
+			sourceTree = "<group>";
+		};
+		4E6864ED26A96CBD003DD5A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864FB26A98979003DD5A8 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E6864EE26A96CCB003DD5A8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864FD26A98BBA003DD5A8 /* Repository.swift */,
+				4E6864EF26A96CE1003DD5A8 /* RepositoryImplementation */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4E6864EF26A96CE1003DD5A8 /* RepositoryImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864FF26A98C72003DD5A8 /* RepositoryImplementation.swift */,
+			);
+			path = RepositoryImplementation;
+			sourceTree = "<group>";
+		};
+		4E6864F026A96D3B003DD5A8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864F226A96DED003DD5A8 /* ScreenTwo */,
+				4E6864F126A96DA0003DD5A8 /* ScreenOne */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4E6864F126A96DA0003DD5A8 /* ScreenOne */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864F426A96F46003DD5A8 /* ViewModel */,
+				4E6864F326A96F1C003DD5A8 /* View */,
+			);
+			path = ScreenOne;
+			sourceTree = "<group>";
+		};
+		4E6864F226A96DED003DD5A8 /* ScreenTwo */ = {
+			isa = PBXGroup;
+			children = (
+				4E68651426A9B51C003DD5A8 /* Cell */,
+				4E68650D26A9B3BB003DD5A8 /* ViewModel */,
+				4E68650C26A9AE3E003DD5A8 /* View */,
+			);
+			path = ScreenTwo;
+			sourceTree = "<group>";
+		};
+		4E6864F326A96F1C003DD5A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864F526A96F92003DD5A8 /* ScreenOneViewController.swift */,
+				4E6864F626A96F92003DD5A8 /* ScreenOneViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E6864F426A96F46003DD5A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E6864F926A96FAE003DD5A8 /* ScreenOneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E68650C26A9AE3E003DD5A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E68651026A9B3ED003DD5A8 /* ScreenTwoViewController.swift */,
+				4E68651126A9B3ED003DD5A8 /* ScreenTwoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E68650D26A9B3BB003DD5A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E68650E26A9B3D8003DD5A8 /* ScreenTwoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E68651426A9B51C003DD5A8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4E68651526A9B533003DD5A8 /* CellViewController.swift */,
+				4E68651626A9B533003DD5A8 /* CellViewController.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F12CA7E40C81E84A02673486 /* Frameworks */ = {
@@ -152,6 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E6864E426A96639003DD5A8 /* LaunchScreen.storyboard in Resources */,
+				4E6864F826A96F92003DD5A8 /* ScreenOneViewController.xib in Resources */,
+				4E68651826A9B533003DD5A8 /* CellViewController.xib in Resources */,
+				4E68651326A9B3ED003DD5A8 /* ScreenTwoViewController.xib in Resources */,
 				4E6864E126A96639003DD5A8 /* Assets.xcassets in Resources */,
 				4E6864DF26A96638003DD5A8 /* Main.storyboard in Resources */,
 			);
@@ -206,9 +354,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E68651726A9B533003DD5A8 /* CellViewController.swift in Sources */,
+				4E68650626A99CC3003DD5A8 /* Router.swift in Sources */,
+				4E6864FE26A98BBA003DD5A8 /* Repository.swift in Sources */,
+				4E68650A26A9A894003DD5A8 /* RemoteDataSource.swift in Sources */,
+				4E6864FA26A96FAE003DD5A8 /* ScreenOneViewModel.swift in Sources */,
+				4E68650826A99CDB003DD5A8 /* AlamofireDataSource.swift in Sources */,
+				4E68650F26A9B3D8003DD5A8 /* ScreenTwoViewModel.swift in Sources */,
 				4E6864DC26A96638003DD5A8 /* ViewController.swift in Sources */,
+				4E6864F726A96F92003DD5A8 /* ScreenOneViewController.swift in Sources */,
 				4E6864D826A96638003DD5A8 /* AppDelegate.swift in Sources */,
+				4E6864FC26A98979003DD5A8 /* Weather.swift in Sources */,
 				4E6864DA26A96638003DD5A8 /* SceneDelegate.swift in Sources */,
+				4E68651226A9B3ED003DD5A8 /* ScreenTwoViewController.swift in Sources */,
+				4E68650026A98C72003DD5A8 /* RepositoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

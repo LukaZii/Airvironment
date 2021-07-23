@@ -10,13 +10,14 @@ import Alamofire
 
 class AlamofireDataSource: RemoteDataSource {
     
-    func getWeather(result: @escaping ((Result<Array<Weather>, Error>) -> Void)) {
+    func getWeather(result: @escaping ((Result<MetaWeather, Error>) -> Void)) {
         AF.request(Router.Weather.getWeather, interceptor: nil).response{ serverResponse in
             switch serverResponse.result {
             case.success(_):
                 do {
                     let jsonDecoder = JSONDecoder()
-                    let responseBody: Array<Weather> = try jsonDecoder.decode(Array<Weather>.self, from: serverResponse.data!) as Array<Weather>
+                    jsonDecoder.dateDecodingStrategy = .custom(JSONDecoder.dateDecodingStrategy)
+                    let responseBody: MetaWeather = try jsonDecoder.decode(MetaWeather.self, from: serverResponse.data!) as MetaWeather
                     result(.success(responseBody))
                 } catch let error {
                     result(.failure(error))
@@ -34,6 +35,7 @@ class AlamofireDataSource: RemoteDataSource {
                 
                 do {
                     let jsonDecoder = JSONDecoder()
+                    jsonDecoder.dateDecodingStrategy = .custom(JSONDecoder.dateDecodingStrategy)
                     let responseBody: Weather = try jsonDecoder.decode(Weather.self, from: serverResponse.data!) as Weather
                     result(.success(responseBody))
                 } catch let error {

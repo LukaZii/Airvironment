@@ -10,7 +10,7 @@ import UIKit
 protocol Repository {
     
     
-    func getWeather(result: @escaping ((Result<Array<Weather>, Error>) -> Void))
+    func getWeather(result: @escaping ((Result<MetaWeather, Error>) -> Void))
     
     func getCurrentWeather(result: @escaping ((Result<Weather, Error>) -> Void))
     

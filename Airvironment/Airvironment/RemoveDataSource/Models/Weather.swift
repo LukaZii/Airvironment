@@ -8,13 +8,13 @@
 import UIKit
 
 class Weather: NSObject, Codable {
-    var created: String
+    var created: Date
     var id: Int
     var temperature: Float
     var humidity: Float
     var pollution: Float
     
-    init(created: String,
+    init(created: Date,
     id: Int,
     temperature: Float,
     humidity: Float,

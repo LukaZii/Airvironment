@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class ScreenOneViewController: UIViewController {
+class ScreenOneViewController: BaseViewController<ScreenOneViewModel> {
 
     @IBOutlet weak var LastUpdatedLabel: UILabel!
     
@@ -19,16 +19,30 @@ class ScreenOneViewController: UIViewController {
     private var observer: NSKeyValueObservation!
 
 
-    let firstScreenViewModel: ScreenOneViewModel = ScreenOneViewModel(repository: RepositoryImplementation())
+
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        viewModel = ScreenOneViewModel(repository: RepositoryImplementation())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         observeLiveData()
-        firstScreenViewModel.onViewDidLoad()
+        viewModel.onViewDidLoad()
     }
+    
+    deinit {
+        viewModel.timer.invalidate()
+        viewModel.timer = nil
+    }
+    
 
     private func observeLiveData(){
-        observer = firstScreenViewModel.observe(\.weather, options: .new) { _, weather  in
+        observer = viewModel.observe(\.weather, options: .new) { _, weather  in
             if let weather = weather.newValue{
                 self.setScreen(weather: weather!)
             }
@@ -36,11 +50,18 @@ class ScreenOneViewController: UIViewController {
     }
     
     private func setScreen(weather: Weather){
-            self.LastUpdatedLabel.text = weather.created
+            var formater = DateFormatter()
+            formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        self.LastUpdatedLabel.text = formater.string(from: weather.created)
             self.TemperatureLabel.text = "\(weather.temperature)"
             self.HumidityLabel.text = "\(weather.humidity)"
             self.PollutionLabel.text = "\(weather.pollution)"
+        
         }
+    
+    @IBAction func buttonShowHistory(_ sender: Any) {
+        navigationController!.show(ScreenTwoViewController(), sender: nil)
+    }
 }
     
 

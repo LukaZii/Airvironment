@@ -20,7 +20,7 @@ class RepositoryImplementation: Repository{
         print("pozvao repository")
     }
     
-    func getWeather(result: @escaping ((Result<Array<Weather>, Error>) -> Void)) {
+    func getWeather(result: @escaping ((Result<MetaWeather, Error>) -> Void)) {
         webDataSource.getWeather(result: result)
     }
     
